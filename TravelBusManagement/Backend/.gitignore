@@ -1,0 +1,52 @@
+# Ignore visual studio files
+.vs/
+# Ignore build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.tlog
+*.plog
+# Visual Studio 2019 config
+.vs2019/
+# Visual Studio 2022 config
+.vs2022/
+# Rider
+.idea/
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.tlog
+*.plog
+# Visual Studio 2019 config
+.vs2019/
+# Visual Studio 2022 config
+.vs2022/
+# Rider
+.idea/
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# Local environment variables
+.env
