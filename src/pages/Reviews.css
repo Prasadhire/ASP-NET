@@ -1,0 +1,19 @@
+.reviews-page {
+  padding: 2rem;
+}
+
+.review-form {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.review-list {
+  margin-top: 2rem;
+}
+
+.review-item {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}

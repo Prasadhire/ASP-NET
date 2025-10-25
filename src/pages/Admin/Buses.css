@@ -1,0 +1,32 @@
+.buses-page {
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.bus-type {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.bus-type.ac {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.bus-type.non-ac {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.bus-type.sleeper {
+  background-color: #e8f5e8;
+  color: #388e3c;
+}

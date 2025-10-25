@@ -1,0 +1,100 @@
+.search-results-page {
+  min-height: 70vh;
+}
+
+.search-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.search-header h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.bus-card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.bus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.bus-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bus-icon i {
+  font-size: 1.5rem;
+}
+
+.bus-details {
+  margin-top: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.stops-info {
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+}
+
+.price-section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 1rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.book-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-header {
+    padding: 1.5rem;
+  }
+  
+  .search-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .bus-card .row {
+    text-align: center;
+  }
+  
+  .price-section {
+    margin-bottom: 1rem;
+  }
+}

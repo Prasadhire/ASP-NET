@@ -1,0 +1,292 @@
+.booking-page {
+  padding: 20px 0;
+  background: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.loading-text {
+  margin-top: 15px;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.booking-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-header h2 {
+  color: #343a40;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.booking-route {
+  color: #6c757d;
+  font-size: 18px;
+  margin: 0;
+}
+
+.booking-route strong {
+  color: #007bff;
+}
+
+.booking-alert {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(220, 53, 69, 0.2);
+}
+
+/* Booking Cards */
+.booking-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header-primary {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border-radius: 15px 15px 0 0 !important;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.card-header-success {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  color: white;
+  border-radius: 15px 15px 0 0 !important;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.card-header-warning {
+  background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+  color: #212529;
+  border-radius: 15px 15px 0 0 !important;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+/* Bus Details */
+.bus-details-card .card-body {
+  padding: 25px;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.type-badge, .status-badge {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.available-seats {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Passenger Form */
+.passenger-card {
+  position: sticky;
+  top: 20px;
+}
+
+.form-group-custom {
+  margin-bottom: 20px;
+}
+
+.form-group-custom label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+.form-control-custom {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-control-custom:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-text-custom {
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Booking Summary */
+.booking-summary {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 25px 0;
+  border: 2px solid #e9ecef;
+}
+
+.booking-summary h6 {
+  color: #495057;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.summary-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #dee2e6, transparent);
+  margin: 15px 0;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px 0;
+}
+
+.summary-item:last-child {
+  margin-bottom: 0;
+}
+
+.selected-seat {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.type-badge-small {
+  font-size: 10px;
+  padding: 4px 8px;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.total-fare {
+  color: #007bff;
+  font-size: 20px;
+}
+
+.no-seat-message {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* Booking Button */
+.booking-button {
+  width: 100%;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+  transition: all 0.3s ease;
+}
+
+.booking-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+.booking-button:disabled {
+  background: #6c757d;
+  transform: none;
+}
+
+.terms-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #6c757d;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-page {
+    padding: 10px 0;
+  }
+  
+  .booking-header {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .booking-header h2 {
+    font-size: 24px;
+  }
+  
+  .booking-route {
+    font-size: 16px;
+  }
+  
+  .sticky-card {
+    position: static;
+  }
+  
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .booking-summary {
+    padding: 15px;
+  }
+  
+  .summary-total {
+    font-size: 16px;
+  }
+  
+  .total-fare {
+    font-size: 18px;
+  }
+}

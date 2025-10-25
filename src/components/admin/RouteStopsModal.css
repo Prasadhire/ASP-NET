@@ -1,0 +1,41 @@
+.stop-item {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.stop-number {
+  width: 32px;
+  height: 32px;
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.stop-details h5 {
+  margin: 0;
+  color: #333;
+}
+
+.route-details {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.route-details h4 {
+  margin: 0;
+  color: #1976d2;
+}
+
+.stops-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 1rem;
+}

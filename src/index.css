@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom styles for our app */
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}

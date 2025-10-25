@@ -1,0 +1,16 @@
+.payment-page {
+  padding: 2rem;
+}
+
+.payment-summary {
+  margin-bottom: 2rem;
+}
+
+.payment-methods {
+  margin-bottom: 2rem;
+}
+
+.payment-confirmation {
+  text-align: center;
+  padding: 2rem;
+}

@@ -1,0 +1,431 @@
+.my-bookings-page {
+  padding: 30px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bookings-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.bookings-header h2 {
+  color: #343a40;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.bookings-header p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Search Card */
+.search-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  background: white;
+}
+
+.search-card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px 20px 0 0 !important;
+  padding: 20px 30px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.search-form {
+  padding: 10px 0;
+}
+
+.form-row {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+
+.form-input-col {
+  flex: 1;
+}
+
+.form-button-col {
+  width: 200px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.phone-input {
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  height: 50px;
+}
+
+.phone-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.search-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.3s ease;
+}
+
+.search-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.error-alert {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+  padding: 15px 20px;
+  margin-bottom: 25px;
+}
+
+/* Bookings Card */
+.bookings-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin-bottom: 30px;
+}
+
+.bookings-card-header {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border-radius: 20px 20px 0 0 !important;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.bookings-count {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 15px;
+}
+
+.bookings-table {
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.bookings-table thead {
+  background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+}
+
+.bookings-table th {
+  border: none;
+  padding: 18px 16px;
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bookings-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.booking-row:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bookings-table td {
+  padding: 20px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+}
+
+/* Booking ID */
+.booking-id {
+  font-weight: 600;
+  color: #495057;
+  font-size: 15px;
+}
+
+/* Bus Details */
+.bus-details {
+  min-width: 180px;
+}
+
+.bus-name {
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 4px;
+}
+
+.bus-number {
+  color: #6c757d;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.bus-type {
+  font-size: 12px;
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* Route Info */
+.route-info {
+  min-width: 150px;
+  text-align: center;
+}
+
+.route-from, .route-to {
+  font-weight: 600;
+  color: #495057;
+}
+
+.route-arrow {
+  color: #6c757d;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+/* Seat Info */
+.seat-badge {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+}
+
+/* Booking Date */
+.booking-date {
+  text-align: center;
+  min-width: 120px;
+}
+
+.date {
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 4px;
+}
+
+.time {
+  color: #6c757d;
+  font-size: 13px;
+}
+
+/* Status Badges */
+.booking-status-confirmed {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.booking-status-boarded {
+  background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+  color: #212529;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.booking-status-completed {
+  background: linear-gradient(135deg, #007bff 0%, #6610f2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.booking-status-cancelled {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.booking-status-pending {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Actions */
+.view-ticket-btn {
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 2px solid #007bff;
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.view-ticket-btn:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* No Bookings Card */
+.no-bookings-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.no-bookings-body {
+  padding: 50px 30px;
+}
+
+.no-bookings-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.no-bookings-card h5 {
+  color: #343a40;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.no-bookings-text {
+  color: #6c757d;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.try-again-btn {
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-weight: 600;
+  border: 2px solid #007bff;
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.try-again-btn:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .my-bookings-page {
+    padding: 15px 0;
+  }
+  
+  .bookings-header {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .bookings-header h2 {
+    font-size: 2rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-button-col {
+    width: 100%;
+  }
+  
+  .bookings-card-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .bookings-table {
+    font-size: 12px;
+  }
+  
+  .bookings-table th,
+  .bookings-table td {
+    padding: 12px 8px;
+  }
+  
+  .bus-details,
+  .route-info {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bookings-table {
+    font-size: 11px;
+  }
+  
+  .bookings-table th,
+  .bookings-table td {
+    padding: 8px 4px;
+  }
+  
+  .view-ticket-btn {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  
+  .no-bookings-body {
+    padding: 30px 15px;
+  }
+  
+  .no-bookings-icon {
+    font-size: 3rem;
+  }
+}

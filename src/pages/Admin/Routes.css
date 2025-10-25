@@ -1,0 +1,40 @@
+.routes-page {
+  padding: 20px;
+  background-color: var(--background-light);
+  min-height: calc(100vh - 60px);
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #6c757d;
+  margin: 0;
+}
+
+.routes-content {
+  background: var(--background-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+
+.route-stops {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.route-stop-badge {
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}

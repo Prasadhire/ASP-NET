@@ -1,0 +1,18 @@
+.star-rating {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.star {
+  cursor: pointer;
+  font-size: 24px;
+  color: #ddd;
+}
+
+.star.filled {
+  color: #ffd700;
+}
+
+.star.readonly {
+  cursor: default;
+}

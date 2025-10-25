@@ -1,0 +1,171 @@
+.seat-selection {
+  text-align: center;
+  padding: 20px;
+}
+
+.bus-layout {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Driver Section */
+.driver-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  background: #e9ecef;
+  border-radius: 10px;
+}
+
+.driver-seat {
+  background: #6c757d;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.steering-wheel {
+  font-size: 24px;
+  color: #495057;
+}
+
+/* Seats Container */
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.aisle-space {
+  width: 40px;
+  height: 50px;
+  background: linear-gradient(90deg, transparent, #dee2e6, transparent);
+  border-radius: 5px;
+}
+
+/* Individual Seats */
+.seat {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: white;
+  flex: 1;
+  max-width: 50px;
+}
+
+.seat:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.seat.available {
+  background: white;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.seat.booked {
+  background: #dc3545;
+  color: white;
+  border-color: #dc3545;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.seat.booked:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.seat.selected {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+  transform: scale(1.1);
+}
+
+/* Legend */
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-item .seat {
+  width: 30px;
+  height: 30px;
+  cursor: default;
+  font-size: 12px;
+}
+
+.legend-item .seat:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Selected Seat Info */
+.selected-seat-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: #d1ecf1;
+  border: 2px solid #bee5eb;
+  border-radius: 10px;
+  color: #0c5460;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bus-layout {
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  .seat {
+    width: 45px;
+    height: 45px;
+    font-size: 12px;
+  }
+  
+  .aisle-space {
+    width: 30px;
+  }
+  
+  .seat-legend {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}

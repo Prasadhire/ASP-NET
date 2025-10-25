@@ -1,0 +1,32 @@
+.loading-spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.spinner {
+  margin-bottom: 1rem;
+}
+
+.spinner.small .spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.spinner.medium .spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+.spinner.large .spinner-border {
+  width: 4rem;
+  height: 4rem;
+}
+
+.loading-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0;
+}
